@@ -4,9 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.24.0/dist/full.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
     <title>Question</title>
 </head>
 <body>
-    
+    <section>
+        <div class="mx-auto w-3/4">
+            <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium">
+                  What is the difference of bar,let and const?
+                </div>
+                <div class="collapse-content"> 
+                 
+                  <div class="overflow-x-auto">
+                    <table class="table w-full">
+                      <!-- head -->
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th>Var</th>
+                          <th>let</th>
+                          <th>const</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- row 1 -->
+                        <tr>
+                          <th>1</th>
+                          <td>The scope of a var variable is functional scope.</td>
+                          <td>Quality Control Specialist</td>
+                          <td>The scope of a const variable is block scope.</td>
+                        </tr>
+                        <!-- row 2 -->
+                        <tr class="active">
+                          <th>2</th>
+                          <td>It can be updated and re-declared into the scope.</td>
+                          <td>It can be updated but cannot be re-declared into the scope.</td>
+                          <td>It cannot be updated or re-declared into the scope.</td>
+                        </tr>
+                        <!-- row 3 -->
+                        <tr>
+                          <th>3</th>
+                          <td>It can be declared without initialization.</td>
+                          <td>It can be declared without initialization.</td>
+                          <td>It cannot be declared without initialization.</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td>It can be accessed without initialization as its default value is “undefined”.</td>
+                            <td>It cannot be accessed without initialization otherwise it will give ‘referenceError’.</td>
+                            <td>It cannot be accessed without initialization, as it cannot be declared without initialization.</td>
+                          </tr>
+                          <tr>
+                            <th>5</th>
+                            <td>hoisting done , with initializing as ‘default’ value.</td>
+                            <td>Hoisting is done , but not initialized (this is the reason for error when we access the let variable before declaration/initialization.</td>
+                            <td>Hoisting is done, but not initialized (this is the reason for error when we access the const variable before declaration/initialization</td>
+                          </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
+
+
+
+
+                </div>
+              </div>
+
+              <div tabindex="0" class="collapse collapse-arrow border border-base-300 bg-base-100 rounded-box">
+                <div class="collapse-title text-xl font-medium">
+                  What is the defference between arrow function and regular function ?
+                    
+                </div>
+                <div class="collapse-content"> 
+                  <p>this value inside a regular function is dynamic and depends on the invocation. But this inside the arrow function is bound lexically and equals to this of the outer function.
+                    arguments object inside the regular functions contains the list of arguments. The arrow function, on the opposite, doesn't define arguments (but you can easily access the arrow function arguments using a rest parameter ...args). 
+                    If the arrow function has one expression, then the expression is returned implicitly, even without using the return keyword.                  
+                    Last but not least, you can define methods using the arrow function syntax inside classes. Fat arrow methods bind this value to the class instance.                   
+                    Anyhow the fat arrow method is invoked, this always equals the class instance, which is useful when the methods are used as callbacks.</p>
+                </div>
+              </div>
+        </div>
+    </section>
 </body>
 </html>
