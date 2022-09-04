@@ -51,14 +51,6 @@
   }
 } 
 
-/* @media only screen and (max-width: 650px) {
-  .card-style2{
-    text-align:justify;
-    
-    display: inline-flex;
-    
-  }
-}  */
     </style>
 </head>
 <body class="">
@@ -75,9 +67,9 @@
                 </label>
                 <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
                  
-                  <li><a>Item 3</a></li>
+                  <li><a href="index2.html">Blog</a></li>
                   
-                  <li><a>Item 4</a></li>
+                 
                  
                 </ul>
           
@@ -140,8 +132,7 @@
     <label for="my-modal-3" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label>
     
   <div id="modal-body" class="">
-<!-- <h3 class="text-lg font-bold">Congratulations random Internet user!</h3>
-    <p class="py-4">You've been selected for a chance to get one year of subscription to use Wikipedia for free!</p> -->
+
   </div>
   </div>
 </div>
@@ -193,9 +184,7 @@
 
           spinner.classList.remove('hidden') ;
          
-         // console.log(dataIte)
-
-        //
+        
          const dataIte =await loadAllData();
            const productsContainer=document.getElementById('products-container'); 
           const setClickValue=document.getElementById('all-menu').addEventListener('click',async(event)=>{
@@ -209,28 +198,19 @@
 
           spinner.classList.add('hidden') ;
 
-           //  spinner.classList.remove('hidden')
-          // console.log(event.target);
-          // if(spinner.classList.remove('hidden')!== false){
-          
-          //  spinner.classList.remove('hidden')==true;
-          //  }
-          //  else{
-          //   spinner.classList.add('hidden');
-          //  }
-
+        
           
 
 
     
           const productQuantityText=document.getElementById('product-quantity');
           const stringNumber=productQuantityText.innerText;
-      //
+      
           productQuantityText.innerText=dataIte.length;
-       //
+       
           console.log(dataIte.length);
        
-      //   
+        
           dataIte.forEach(product =>{
 
          const {author,details,thumbnail_url,title,rating}=product;
@@ -291,15 +271,7 @@
 
         modalBody.textContent='';
         notFound.textContent='';
-        // if((title && thumbnail_url)===true){
-        // //  console.log('not found');
-        // notFound.innerHTML=`<h2 class='text-2xl text-orange-500 text-center'>Not Found</h2>`
-        //   return;
-
-        // }
-
-
-     // modalBody.textContent='';
+        
       modalBody.innerHTML=`
       <div >
       <p class="py-4">
